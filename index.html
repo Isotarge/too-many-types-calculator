@@ -247,13 +247,65 @@
             const splitInput = rawInputValue.toLowerCase().split(" ");
             let foundTypes = [];
             for (const word of splitInput) {
-                if (word === 'deez' || word === 'nuts') {
+                if (word === 'deez' || word === 'nuts' || word === 'nut') {
                     if (!foundTypes.includes("deez nuts")) {
                         foundTypes.push("deez nuts");
+                    }
+                } else if (word === 'fight') {
+                    if (!foundTypes.includes("fighting")) {
+                        foundTypes.push("fighting");
+                    }
+                } else if (word === 'stink' || word === 'stinks' || word === 'smelly' || word === 'smell') {
+                    if (!foundTypes.includes("stinky")) {
+                        foundTypes.push("stinky");
+                    }
+                } else if (word === 'monkey' || word === 'donkey' || word === 'dk' || word === 'simian') {
+                    if (!foundTypes.includes("monke")) {
+                        foundTypes.push("monke");
                     }
                 } else if (word === 'guy') {
                     if (!foundTypes.includes("guys")) {
                         foundTypes.push("guys");
+                    }
+                } else if (word === 'pika') {
+                    if (!foundTypes.includes("pikachu")) {
+                        foundTypes.push("pikachu");
+                    }
+                } else if (word === 'metal') {
+                    if (!foundTypes.includes("steel")) {
+                        foundTypes.push("steel");
+                    }
+                } else if (word === 'vibes') {
+                    if (!foundTypes.includes("vibe")) {
+                        foundTypes.push("vibe");
+                    }
+                } else if (word === 'friendly') {
+                    if (!foundTypes.includes("friend")) {
+                        foundTypes.push("friend");
+                    }
+                } else if (word === 'undertale') {
+                    if (!foundTypes.includes("sans")) {
+                        foundTypes.push("sans");
+                    }
+                } else if (word === 'amogus' || word === 'among') {
+                    if (!foundTypes.includes("sus")) {
+                        foundTypes.push("sus");
+                    }
+                } else if (word === 'small' || word === 'smol') {
+                    if (!foundTypes.includes("little")) {
+                        foundTypes.push("little");
+                    }
+                } else if (word === 'o.u' || word === 'o.u.') {
+                    if (!foundTypes.includes("ou")) {
+                        foundTypes.push("ou");
+                    }
+                } else if (word === 'angry') {
+                    if (!foundTypes.includes("angy")) {
+                        foundTypes.push("angy");
+                    }
+                } else if (word === 'ele' || word === 'elec' || word === 'elect' || word === 'electr' || word === 'electri' || word === 'leccy') {
+                    if (!foundTypes.includes("electric")) {
+                        foundTypes.push("electric");
                     }
                 } else if (types.includes(word)) {
                     if (!foundTypes.includes(word)) {
